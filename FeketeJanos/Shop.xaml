@@ -11,7 +11,7 @@
     </Window.Background>
     <Grid>
         <Label Content="SHOP" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FFFFFEE0" FontFamily="Stencil" FontSize="20"/>
-        <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14" FontFamily="Stencil" Foreground="#FFFFFEE0"/>
+        <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14" FontFamily="Stencil" Foreground="#FFFFFEE0" HorizontalContentAlignment="Center"/>
 
         <GroupBox Header="Default Background" Margin="33,120,574,239" Width="150" Foreground="#FFFFFEE0" FontFamily="Stencil">
             <Button Click="Button_Click">
