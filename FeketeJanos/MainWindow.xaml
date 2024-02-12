@@ -132,7 +132,7 @@
             </Label.Foreground>
         </Label>
         <Grid.Background>
-            <ImageBrush ImageSource="/background.png"/>
+            <ImageBrush ImageSource="{Binding hatter}"/>
         </Grid.Background>
 
 

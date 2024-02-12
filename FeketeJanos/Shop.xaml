@@ -11,22 +11,22 @@
         <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14"/>
 
         <GroupBox Header="Default Background Style" Margin="33,120,574,239">
-            <Button/>
+            <Button Click="Button_Click"/>
         </GroupBox>
         <GroupBox Header="Background Style 1" Margin="304,120,304,239">
-            <Button/>
-        </GroupBox>
-        <GroupBox Header="Default Card Style" Margin="34,326,574,33">
-            <Button/>
+            <Button Click="Button_Click_1"/>
         </GroupBox>
         <GroupBox Header="Background Style 2" Margin="575,120,33,239">
-            <Button/>
+            <Button Click="Button_Click_2"/>
+        </GroupBox>
+        <GroupBox Header="Default Card Style" Margin="34,326,574,33">
+            <Button Click="Button_Click_3"/>
         </GroupBox>
         <GroupBox Header="Card Style 1" Margin="304,326,304,33">
-            <Button/>
+            <Button Click="Button_Click_4"/>
         </GroupBox>
         <GroupBox Header="Card Style 2" Margin="575,326,33,33">
-            <Button/>
+            <Button Click="Button_Click_5"/>
         </GroupBox>
     </Grid>
 </Window>

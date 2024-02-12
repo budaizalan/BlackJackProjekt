@@ -23,6 +23,8 @@ namespace FeketeJanos
     /// 
     public partial class MainWindow : Window
     {
+        Megoldas m = new Megoldas();
+
         int playerWin = 0;
         int machineWin = 0;
         int chips = 100;
@@ -36,7 +38,7 @@ namespace FeketeJanos
         {
             InitializeComponent();
             InitializeCards();
-
+            this.DataContext = m;
             Play();
         }
 
@@ -252,7 +254,7 @@ namespace FeketeJanos
 
         private void imgChip_Click(object sender, RoutedEventArgs e)
         {
-            Shop shop = new Shop();
+            Shop shop = new Shop(m);
             shop.Show();
         }
     }
