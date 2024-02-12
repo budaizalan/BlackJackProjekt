@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Jedlik\\BlackJackProjekt\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj": {}
+    "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj": {}
   },
   "projects": {
-    "D:\\_Jedlik\\BlackJackProjekt\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj": {
+    "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Jedlik\\BlackJackProjekt\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj",
+        "projectUniqueName": "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj",
         "projectName": "FeketeJanos",
-        "projectPath": "D:\\_Jedlik\\BlackJackProjekt\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj",
-        "packagesPath": "C:\\Users\\Budai Zalán\\.nuget\\packages\\",
-        "outputPath": "D:\\_Jedlik\\BlackJackProjekt\\BlackJackProjekt\\FeketeJanos\\obj\\",
+        "projectPath": "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj",
+        "packagesPath": "C:\\Users\\kriszkev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Budai Zalán\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kriszkev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

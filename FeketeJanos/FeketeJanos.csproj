@@ -12,6 +12,14 @@
     <None Remove="2.png" />
     <None Remove="background.png" />
     <None Remove="banger chip.png" />
+    <None Remove="Imgs\background.png" />
+    <None Remove="Imgs\black background.jpg" />
+    <None Remove="Imgs\blue background.jpg" />
+    <None Remove="Imgs\Hátlap.png" />
+    <None Remove="Imgs\shopbg.jpg" />
+    <None Remove="Imgs\shopbg.png" />
+    <None Remove="Imgs\uno card back.png" />
+    <None Remove="Imgs\yugioh card back.jpg" />
     <None Remove="lovely három.png" />
   </ItemGroup>
 
@@ -20,6 +28,30 @@
     <Resource Include="2.png" />
     <Resource Include="background.png" />
     <Resource Include="banger chip.png" />
+    <Resource Include="Imgs\background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\black background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\blue background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\Hátlap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\shopbg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\shopbg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\uno card back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imgs\yugioh card back.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="lovely három.png" />
   </ItemGroup>
 
@@ -178,9 +210,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Imgs\9.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Imgs\background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FeketeJanos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c83fcfe7081881079d04b02d716693be80c2e260")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FeketeJanos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FeketeJanos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

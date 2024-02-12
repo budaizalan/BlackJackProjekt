@@ -6,27 +6,68 @@
         xmlns:local="clr-namespace:FeketeJanos"
         mc:Ignorable="d"
         Title="Shop" Height="550" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/Imgs/shopbg.png" Stretch="UniformToFill"/>
+    </Window.Background>
     <Grid>
-        <Label Content="SHOP" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14"/>
+        <Label Content="SHOP" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FFFFFEE0" FontFamily="Stencil" FontSize="20"/>
+        <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14" FontFamily="Stencil" Foreground="#FFFFFEE0"/>
 
-        <GroupBox Header="Default Background Style" Margin="33,120,574,239">
-            <Button Click="Button_Click"/>
+        <GroupBox Header="Default Background" Margin="33,120,574,239" Width="150" Foreground="#FFFFFEE0" FontFamily="Stencil">
+            <Button Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/background.png"/>
+                </Button.Background>
+            </Button>
         </GroupBox>
-        <GroupBox Header="Background Style 1" Margin="304,120,304,239">
-            <Button Click="Button_Click_1"/>
+        <GroupBox Header="Blue Background" Margin="304,120,304,239" Width="150" Foreground="#FFFFFEE0" FontFamily="Stencil">
+            <Button Click="Button_Click_1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imgs/blue background.jpg"/>
+                </Button.Background>
+            </Button>
         </GroupBox>
-        <GroupBox Header="Background Style 2" Margin="575,120,33,239">
-            <Button Click="Button_Click_2"/>
+        <GroupBox Header="Black Background" Margin="575,120,33,239" Width="150" FontFamily="Stencil" Foreground="#FFFFFEE0">
+            <Button Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imgs/black background.jpg"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush ImageSource="/Imgs/black background.jpg"/>
+                </Button.BorderBrush>
+            </Button>
         </GroupBox>
-        <GroupBox Header="Default Card Style" Margin="34,326,574,33">
-            <Button Click="Button_Click_3"/>
+        <GroupBox Header="Default Card" Margin="34,326,574,33" Width="125
+                  " Foreground="#FFFFFEE0" FontFamily="Stencil">
+            <Button Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imgs/Hátlap.png"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush ImageSource="/Imgs/Hátlap.png"/>
+                </Button.BorderBrush>
+            </Button>
         </GroupBox>
-        <GroupBox Header="Card Style 1" Margin="304,326,304,33">
-            <Button Click="Button_Click_4"/>
+        <GroupBox Header="UNO Card" Margin="304,326,304,33" Width="125" Foreground="#FFFFFEE0" FontFamily="Stencil">
+            <Button Click="Button_Click_4" RenderTransformOrigin="1,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imgs/uno card back.png"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush ImageSource="/Imgs/uno card back.png"/>
+                </Button.BorderBrush>
+            </Button>
         </GroupBox>
-        <GroupBox Header="Card Style 2" Margin="575,326,33,33">
-            <Button Click="Button_Click_5"/>
+        <GroupBox Header="Yu-Gi-Oh Card" Margin="575,326,33,33" Width="125
+                  " Foreground="#FFFFFEE0" FontFamily="Stencil">
+            <Button Click="Button_Click_5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imgs/yugioh card back.jpg"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush ImageSource="/Imgs/yugioh card back.jpg"/>
+                </Button.BorderBrush>
+            </Button>
         </GroupBox>
     </Grid>
 </Window>
