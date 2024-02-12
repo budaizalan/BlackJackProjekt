@@ -1,0 +1,140 @@
+﻿<Window x:Class="FeketeJanos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FeketeJanos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="/lovely három.png">
+    <Grid>
+        <Label x:Name="lblEredmeny"  Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" RenderTransformOrigin="0.479,-0.417" Margin="359,191,0,0" Height="46" FontFamily="Comic Sans MS" Foreground="White" FontSize="20"/>
+        <Button x:Name="btnUjra" Content="Újra" HorizontalAlignment="Left" Margin="267,380,0,0" VerticalAlignment="Top" Width="82" Click="btnUjra_Click" FontFamily="Comic Sans MS" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1F4607"/>
+                    <GradientStop Color="#FF1D410A" Offset="0.993"/>
+                    <GradientStop Color="#FF193207" Offset="0.25"/>
+                    <GradientStop Color="#FF19410A" Offset="0.503"/>
+                    <GradientStop Color="#FF1F3B0A" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Label x:Name="lblOsztoWin" Content="Osztó győzelmei:" HorizontalAlignment="Left" Height="49" Margin="21,55,0,0" VerticalAlignment="Top" Width="152" FontFamily="Comic Sans MS" FontSize="14">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lblJatekosWin" Content="Játékos győzelmei:" HorizontalAlignment="Left" Height="49" Margin="21,346,0,0" VerticalAlignment="Top" Width="152" FontFamily="Comic Sans MS" Background="#00000000" FontSize="14">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA" Offset="0.003"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="btnOsztas" Content="Osztás" HorizontalAlignment="Left" Margin="380,380,0,0" VerticalAlignment="Top" Width="82" Click="btnOsztas_Click" FontFamily="Comic Sans MS" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1F4607"/>
+                    <GradientStop Color="#FF1D410A" Offset="1"/>
+                    <GradientStop Color="#FF193207" Offset="0.25"/>
+                    <GradientStop Color="#FF19410A" Offset="0.5"/>
+                    <GradientStop Color="#FF1F3B0A" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" x:Name="SpMachine" Margin="0,80,0,244"/>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" x:Name="SpPlayer" Margin="0,241,0,93"/>
+        <Button x:Name="btnElég" Content="Elég" HorizontalAlignment="Left" Margin="493,380,0,0" VerticalAlignment="Top" Width="82" FontFamily="Comic Sans MS" Click="btnElég_Click" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1F4607"/>
+                    <GradientStop Color="#FF1D410A" Offset="0.993"/>
+                    <GradientStop Color="#FF193207" Offset="0.25"/>
+                    <GradientStop Color="#FF19410A" Offset="0.503"/>
+                    <GradientStop Color="#FF1F3B0A" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="imgChip" Margin="17,175,689,173" RenderTransformOrigin="0.5,0.5" Click="imgChip_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Content" Value="SHOP"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Background>
+                <ImageBrush ImageSource="/banger chip.png" Stretch="Fill" />
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="1000"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="lblChipSzámláló" Margin="112,198,0,188" Content=":100"  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="70" FontSize="14">
+
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lblCurrentNumber" Margin="386,332,0,54" Content=""  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="70" FontSize="14">
+
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lblMachineCurrentNumber" Margin="385,35,0,351" Content=""  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="70" FontSize="14">
+
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDADADA"/>
+                    <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                    <GradientStop Color="#FFDED9D9" Offset="0.51"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.png"/>
+        </Grid.Background>
+
+
+    </Grid>
+</Window>
