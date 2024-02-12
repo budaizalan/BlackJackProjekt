@@ -30,6 +30,8 @@ namespace FeketeJanos
             string chips = ((MainWindow)Application.Current.MainWindow).lblChipSzámláló.Content.ToString();
             h.Content = "Balance" + chips;
         }
+
+
     }
 
 }
