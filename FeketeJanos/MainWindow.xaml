@@ -131,6 +131,25 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
+        <StackPanel VerticalAlignment="Top" Margin="619,157,85,0" Height="250">
+            <Label Content="Tét:" FontSize="14" FontFamily="Comic Sans Ms">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFDADADA"/>
+                        <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                        <GradientStop Color="#FFDED9D9" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Slider  x:Name="slValue"
+            Maximum="100"
+            IsSnapToTickEnabled="True"
+            Value="20"
+            TickFrequency="10"
+            Orientation="Vertical"
+            TickPlacement="BottomRight" Height="178" Background="Transparent" SmallChange="5" LargeChange="10" BorderBrush="Transparent"/>
+            <TextBox x:Name="betTxb" Text="{Binding Value, ElementName=slValue, UpdateSourceTrigger=PropertyChanged}" Width="20" Margin="0, 10, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </StackPanel>
         <Grid.Background>
             <ImageBrush ImageSource="{Binding hatter}"/>
         </Grid.Background>

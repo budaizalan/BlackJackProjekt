@@ -28,6 +28,7 @@ namespace FeketeJanos
         int playerWin = 0;
         int machineWin = 0;
         int chips = 100;
+        
 
         bool endOfGame = false;
         Kartya[] selectedCards = new Kartya[4];
@@ -70,6 +71,7 @@ namespace FeketeJanos
             int machineSum = 0;
             bool machineHasAce = false;
             bool playerHasAce = false;
+            int bet = int.Parse(betTxb.Text);
             foreach (Kartya k in PlayerCards)
             {
                 playerSum += k.Value;
@@ -107,19 +109,25 @@ namespace FeketeJanos
             {
                 playerWin += 1;
                 displayWinner("Győztél");
-                chips += 10;
+                chips += bet;
                 lblChipSzámláló.Content = $": {chips}";
             }
             else
             {
                 machineWin += 1;
                 displayWinner("Vesztettél");
-                chips -= 10;
+                chips -= bet;
                 lblChipSzámláló.Content = $": {chips}";
 
             }
             //lblCurrentNumber.Content = playerSum.ToString();
-
+            betTxb.Text = "20";
+            slValue.IsEnabled = true;
+            betTxb.IsEnabled = true;
+            if(chips < 0)
+            {
+                lblChipSzámláló.Content = ": núúla'";
+            }
 
         }
 
@@ -205,6 +213,8 @@ namespace FeketeJanos
             checkIfLost();
             lblChipSzámláló.Content = $": {chips}";
             //lblCurrentNumber.Content = calcWinner().ToString();
+            slValue.IsEnabled = false ;
+            betTxb.IsEnabled = false ; 
         }
 
         private void checkIfLost()

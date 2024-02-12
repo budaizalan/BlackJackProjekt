@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-Z:\Projekt4\FeketeJanos\obj\Debug\net6.0-windows\
+D:\_Jedlik\BlackJackProjekt\BlackJackProjekt\FeketeJanos\obj\Debug\net6.0-windows\
 FeketeJanos
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-Z:\Projekt4\FeketeJanos\App.xaml
+D:\_Jedlik\BlackJackProjekt\BlackJackProjekt\FeketeJanos\App.xaml
 2338688166
 
 61779998227
-194726069201
+194258113564
 MainWindow.xaml;Shop.xaml;
 
 False
