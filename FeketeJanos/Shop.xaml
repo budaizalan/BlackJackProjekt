@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FeketeJanos"
         mc:Ignorable="d"
-        Title="Shop" Height="550" Width="800">
+        Title="Shop" Height="550" Width="800" ResizeMode="NoResize">
     <Grid>
         <Label Content="SHOP" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14"/>
