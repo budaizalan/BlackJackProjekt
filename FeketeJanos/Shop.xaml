@@ -9,7 +9,9 @@
     <Window.Background>
         <ImageBrush ImageSource="/Imgs/shopbg.png" Stretch="UniformToFill"/>
     </Window.Background>
+    
     <Grid>
+        
         <Label Content="SHOP" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FFFFFEE0" FontFamily="Stencil" FontSize="20"/>
         <Label x:Name="h" Margin="0,34,0,352" Content="Balance: "  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="121" FontSize="14" FontFamily="Stencil" Foreground="#FFFFFEE0" HorizontalContentAlignment="Center"/>
 
@@ -22,18 +24,83 @@
         </GroupBox>
         <GroupBox Header="Blue Background" Margin="304,120,304,239" Width="150" Foreground="#FFFFFEE0" FontFamily="Stencil">
             <Button Click="Button_Click_1">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Content" Value="{Binding priceblue}"/>
+                            </Trigger>
+                            <EventTrigger RoutedEvent="Button.MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetProperty="(Button.Opacity)"
+                                                From="1.0" To="0.5" Duration="0:0:0.5" AutoReverse="True"
+                                                RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="Button.MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                              Storyboard.TargetProperty="(Button.Opacity)"
+                                              To="1" Duration="0:0:0.1" /> 
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
                 <Button.Background>
-                    <ImageBrush ImageSource="/Imgs/blue background.jpg"/>
+                    <ImageBrush ImageSource="/Imgs/blue_background.jpg"/>
                 </Button.Background>
             </Button>
         </GroupBox>
-        <GroupBox Header="Black Background" Margin="575,120,33,239" Width="150" FontFamily="Stencil" Foreground="#FFFFFEE0">
+        <GroupBox Header="Black Background" Margin="575,120,33,239" Width="150" FontFamily="Stencil" Foreground="#FFFFFEE0" >
             <Button Click="Button_Click_2">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Content" Value="{Binding priceblack}"/>
+                            </Trigger>
+                            <EventTrigger RoutedEvent="Button.MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                              Storyboard.TargetProperty="(Button.Opacity)"
+                                              From="1.0" To="0.5" Duration="0:0:0.5" AutoReverse="True"
+                                              RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="Button.MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                              Storyboard.TargetProperty="(Button.Opacity)"
+                                              To="1" Duration="0:0:0.1" />
+
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
                 <Button.Background>
-                    <ImageBrush ImageSource="/Imgs/black background.jpg"/>
+                    <ImageBrush ImageSource="/Imgs/black_background.jpg"/>
                 </Button.Background>
                 <Button.BorderBrush>
-                    <ImageBrush ImageSource="/Imgs/black background.jpg"/>
+                    <ImageBrush ImageSource="/Imgs/black_background.jpg"/>
                 </Button.BorderBrush>
             </Button>
         </GroupBox>

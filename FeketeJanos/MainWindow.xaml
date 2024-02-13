@@ -83,7 +83,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="lblChipSzámláló" Margin="112,198,0,188" Content=":100"  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="70" FontSize="14">
+        <Label x:Name="lblChipSzámláló" Margin="112,198,0,188" Content="{Binding chips, Mode=TwoWay}"  RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="70" FontSize="14">
 
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

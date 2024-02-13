@@ -27,7 +27,6 @@ namespace FeketeJanos
 
         int playerWin = 0;
         int machineWin = 0;
-        int chips = 100;
         
 
         bool endOfGame = false;
@@ -40,6 +39,7 @@ namespace FeketeJanos
             InitializeComponent();
             InitializeCards();
             this.DataContext = m;
+            m.chips += 100;
             Play();
         }
 
@@ -109,22 +109,22 @@ namespace FeketeJanos
             {
                 playerWin += 1;
                 displayWinner("Győztél");
-                chips += bet;
-                lblChipSzámláló.Content = $": {chips}";
+                m.chips += bet;
+                lblChipSzámláló.Content = $": {m.chips}";
             }
             else
             {
                 machineWin += 1;
                 displayWinner("Vesztettél");
-                chips -= bet;
-                lblChipSzámláló.Content = $": {chips}";
+                m.chips -= bet;
+                lblChipSzámláló.Content = $": {m.chips}";
 
             }
             //lblCurrentNumber.Content = playerSum.ToString();
             betTxb.Text = "20";
             slValue.IsEnabled = true;
             betTxb.IsEnabled = true;
-            if(chips < 0)
+            if(m.chips < 0)
             {
                 lblChipSzámláló.Content = ": núúla'";
             }
@@ -211,7 +211,7 @@ namespace FeketeJanos
             getRandomCard(PlayerCards);
             displayCards();
             checkIfLost();
-            lblChipSzámláló.Content = $": {chips}";
+            lblChipSzámláló.Content = $": {m.chips}";
             //lblCurrentNumber.Content = calcWinner().ToString();
             slValue.IsEnabled = false ;
             betTxb.IsEnabled = false ; 
@@ -237,9 +237,9 @@ namespace FeketeJanos
             {
                 return;
             }
-            if (chips <= 0)
+            if (m.chips <= 0)
             {
-                chips = 0;
+                m.chips = 0;
                 MessageBox.Show("Nincs több pízed");
                 return;
 

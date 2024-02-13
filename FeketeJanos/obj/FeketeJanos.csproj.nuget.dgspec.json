@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj": {}
+    "Z:\\Projekt5\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj": {
+    "Z:\\Projekt5\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj",
+        "projectUniqueName": "Z:\\Projekt5\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj",
         "projectName": "FeketeJanos",
-        "projectPath": "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\FeketeJanos.csproj",
-        "packagesPath": "C:\\Users\\kriszkev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kriszkev\\Desktop\\relics of the past\\keghe kukis házijai\\Prooooooooogiiiiiiiiiiiiiiiiiiiiiiiii\\feka\\FeketeJanos\\obj\\",
+        "projectPath": "Z:\\Projekt5\\BlackJackProjekt\\FeketeJanos\\FeketeJanos.csproj",
+        "packagesPath": "C:\\Users\\budai.zalan\\.nuget\\packages\\",
+        "outputPath": "Z:\\Projekt5\\BlackJackProjekt\\FeketeJanos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kriszkev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\budai.zalan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -25,28 +25,70 @@ namespace FeketeJanos
         {
             InitializeComponent();
             this.m = m;
+            this.DataContext = this.m;
             Szamos();
         }
+        string chips = ((MainWindow)Application.Current.MainWindow).lblChipSzámláló.Content.ToString();
+        bool owned_blue = false;
+        bool owned_black = false;
 
         public void Szamos()
         {
-            string chips = ((MainWindow)Application.Current.MainWindow).lblChipSzámláló.Content.ToString();
-            h.Content = "Balance" + chips;
+            h.Content = "Balance: " + m.chips;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            m.hatter = "1.png";
+            m.hatter = "background.png";
+            Szamos();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (owned_blue)
+            {
+                m.hatter = "/Imgs/blue_background.jpg";
 
+            }
+            else
+            {
+                if (m.chips >= 50)
+                {
+                    m.hatter = "/Imgs/blue_background.jpg";
+                    m.priceblue = "Owned";
+                    owned_blue = true;
+                    m.chips -= 50;
+                }
+                else
+                {
+                    m.priceblue = "Not enough chips";
+                }
+            }
+            Szamos();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            if (owned_black)
+            {
+                m.hatter = "/Imgs/black_background.jpg";
 
+            }
+            else
+            { 
+                if (m.chips >= 50)
+                {
+                    m.hatter = "/Imgs/black_background.jpg";
+                    m.priceblack = "Owned";
+                    owned_black = true;
+                    m.chips -= 50;
+                }
+                else
+                {
+                    m.priceblack = "Not enough chips";
+                }
+            }
+            Szamos();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

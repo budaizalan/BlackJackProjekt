@@ -13,8 +13,8 @@
     <None Remove="background.png" />
     <None Remove="banger chip.png" />
     <None Remove="Imgs\background.png" />
-    <None Remove="Imgs\black background.jpg" />
-    <None Remove="Imgs\blue background.jpg" />
+    <None Remove="Imgs\black_background.jpg" />
+    <None Remove="Imgs\blue_background.jpg" />
     <None Remove="Imgs\Hátlap.png" />
     <None Remove="Imgs\shopbg.jpg" />
     <None Remove="Imgs\shopbg.png" />
@@ -31,10 +31,10 @@
     <Resource Include="Imgs\background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imgs\black background.jpg">
+    <Resource Include="Imgs\black_background.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Imgs\blue background.jpg">
+    <Resource Include="Imgs\blue_background.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Imgs\Hátlap.png">

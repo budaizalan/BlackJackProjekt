@@ -26,6 +26,30 @@ namespace FeketeJanos
             set { _hatter = value; OnPropertyChanged("hatter"); }
         }
 
+        private int _chips = 0;
+
+        public int chips
+        {
+            get { return _chips; }
+            set { _chips = value; OnPropertyChanged("chips"); }
+        }
+
+        private string _priceblue = "150";
+
+        public string priceblue
+        {
+            get { return _priceblue; }
+            set { _priceblue = value; OnPropertyChanged("priceblue"); }
+        }
+
+        private string _priceblack = "50";
+
+        public string priceblack
+        {
+            get { return _priceblack; }
+            set { _priceblack = value; OnPropertyChanged("priceblack"); }
+        }
+
         public Megoldas()
         {
             
