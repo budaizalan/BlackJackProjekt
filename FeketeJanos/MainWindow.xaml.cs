@@ -100,7 +100,7 @@ namespace FeketeJanos
                 
             }
             if (playerSum == machineSum) {
-                displayWinner("Döntetlen");
+                displayWinner("Draw");
                 
 
             }
@@ -108,14 +108,14 @@ namespace FeketeJanos
             if (playerSum <= 21 && (playerSum > machineSum || machineSum > 21))
             {
                 playerWin += 1;
-                displayWinner("Győztél");
+                displayWinner("You won");
                 m.chips += bet;
                 lblChipSzámláló.Content = $": {m.chips}";
             }
             else
             {
                 machineWin += 1;
-                displayWinner("Vesztettél");
+                displayWinner("You lose");
                 m.chips -= bet;
                 lblChipSzámláló.Content = $": {m.chips}";
 
@@ -134,8 +134,8 @@ namespace FeketeJanos
         private void displayWinner(string msg)
         {
             lblEredmeny.Content = msg;
-            lblOsztoWin.Content = $"Osztó győzelmei: {machineWin}";
-            lblJatekosWin.Content = $"Játékos győzelmei: {playerWin}";
+            lblOsztoWin.Content = $"Dealer wins: {machineWin}";
+            lblJatekosWin.Content = $"Dealer wins: {playerWin}";
         }
 
         private void getRandomCard(List<Kartya> klist)
@@ -266,6 +266,19 @@ namespace FeketeJanos
         {
             Shop shop = new Shop(m);
             shop.Show();
+        }
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
         }
     }
 }
